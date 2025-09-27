@@ -1,4 +1,4 @@
- import streamlit as st
+import streamlit as st
 from deep_translator import GoogleTranslator
 
 st.set_page_config(page_title="🌍 Multi-Language Translator", layout="centered")
@@ -38,3 +38,4 @@ if st.button("Translate"):
             st.success(f"✅ Translation: {translated}")
         except Exception as e:
             st.error(f"❌ Error: {str(e)}")
+
